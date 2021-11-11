@@ -1,0 +1,31 @@
+.container{
+	display:flex;
+	padding:5px;
+	justify-content: center;
+	align-items: center;
+}
+.login{
+	margin-top: 150px;
+  	background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+	padding:20px;
+}
+
+.infosubmit{
+	margin-left:130px;
+	margin-top:10px;
+}
+
+.para{
+	margin-left:50px;
+}
+
+.title{
+	margin-left:110px;
+}
+
+.infosubmit a{
+	text-decoration:none;
+}
+.
+
+
