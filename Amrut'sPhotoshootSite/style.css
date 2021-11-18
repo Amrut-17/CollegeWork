@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'DM Serif Display', serif;
+}
+
+body{
+    /* background-color: black; */
+}
+.navbar{
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    padding: 20px 0;
+    top: 0;
+    z-index: 999;
+    transition: .2s linear;
+}
+
+.inner-width{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 50px;
+}
+
+.navbar .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-toggler{
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+
+.menu-toggler span{
+    display: block;
+    height: 2px;
+    width: 25px;
+    background-color: white;
+    margin: 6px 0;
+    position: relative;
+    /* transition: .1s linear; */
+}
+
+.navbar-menu{
+    display: flex;
+    height: 40px;
+    /* font-family: 'IBM Plex Sans', sans-serif;  */
+    font-family: 'Patua One', cursive;
+}
+
+.navbar-menu li{
+    list-style: none;    
+}
+
+.fa-home{
+    display: none;
+}
+
+.navbar-menu li:hover{
+    border-bottom: 2px solid rgb(247, 202, 6);
+    border-right: 2px solid rgb(247, 202, 6);
+    box-shadow: 3px 2px 3px rgb(250, 215, 61);
+}
+
+.navbar-menu a{
+    color: white;
+    font-size: 25px;
+    font-weight: 200;
+    margin: 20px;
+    transition: .1s linear;
+    
+}
+
+.navbar-menu a:hover{
+    color: #f1ecec !important;
+    font-size: 30px;
+    
+}
+
+.sticky{
+    background-color: black;
+    padding: 10px 0;
+}
+
+.sticky .navbar-menu a{
+    color: white;
+}
+
+.sticky .navbar-menu span{
+    background-color: black;
+}
+
+#home{
+    height: 100vh;
+    min-height: 500px;
+    background: url(./homeWallpaper.jpg);
+    /* background: black; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#home .inner-width{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#home .content h1{
+    font-size: 40px;
+    /* font-family: 'Fredoka One', cursive; */
+    font-family: 'Satisfy', cursive;
+    letter-spacing: 3px;
+    color: rgb(253, 57, 8);
+}
+
+button {
+    margin: 50px;
+    font-family: inherit;
+  }
+  /* End of Page styling */
+  
+  /* Simple button styling -- No animation */
+  .loginbutton {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .loginbutton::after {
+    content: "";
+    background-color: #dcbaff;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+  }
+  /* End of Simple Button */
+  
+  /* Fill button styling */
+  .signupbutton {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .signupbutton::after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .signupbutton:hover::after {
+    top: 0px;
+    left: 0px;
+  }
+  /* End of Fill Button  */
+  
+  
